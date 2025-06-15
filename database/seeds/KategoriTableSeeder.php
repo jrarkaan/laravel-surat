@@ -16,11 +16,13 @@ class KategoriTableSeeder extends Seeder
 
         $kategoriCreate = DB::table('kategori')
             ->insert([
-            [    
-                'nama' => 'Laporan Pertanggung Jawaban'
+            [
+                'nama' => 'Laporan Pertanggung Jawaban',
+                'jenis' => 'rpjmd'
             ],
-        [
-                'nama' => 'Rencana Anggaran'
+            [
+                'nama' => 'Rencana Anggaran',
+                'jenis' => 'rpjmd'
             ]
         ]);
     }

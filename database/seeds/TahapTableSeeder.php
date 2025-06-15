@@ -16,12 +16,14 @@ class TahapTableSeeder extends Seeder
 
         $tahapCreate = DB::table('tahap')
             ->insert([
-            [    
-                'nama' => 'Persiapan Penyusunan RPJMD'
-            ],
-        [
-                'nama' => 'Penyusunan RPJMD'
-            ]
+                [
+                    'nama' => 'Persiapan Penyusunan RPJMD',
+                    'jenis' => 'rpjmd'
+                ],
+                [
+                    'nama' => 'Penyusunan RPJMD',
+                    'jenis' => 'rpjmd'
+                ]
         ]);
     }
 }

@@ -15,6 +15,7 @@ class CreatePenggunaTable extends Migration
     {
         Schema::create('pengguna', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('email',150);
             $table->string('nip',10);
             $table->string('nama',150);
             $table->string('password', 150);
